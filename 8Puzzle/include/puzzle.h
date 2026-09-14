@@ -7,14 +7,17 @@ const char VAZIO = ' ';        // Representa o espaço vazio
 // Tipo que representa o tabuleiro
 typedef char Tabuleiro[TAM][TAM];
 
-// Códigos de controle para as teclas de entrada do usuário
-const int TECLA_ESQUERDA   = 1;
-const int TECLA_CIMA       = 2;
-const int TECLA_DIREITA    = 3;
-const int TECLA_BAIXO      = 4;
-const int TECLA_SELECIONAR = 5;
-const int TECLA_SAIR       = 0;
-const int TECLA_INVALIDA   = -1;
+// Códigos de controle para representar as ações do teclado.
+// Cada constante recebe um número que identifica uma ação.
+// O const impede que esses valores sejam alterados durante a execução.
+
+const int TECLA_ESQUERDA   = 1;   // Movimento para a esquerda
+const int TECLA_CIMA       = 2;   // Movimento para cima
+const int TECLA_DIREITA    = 3;   // Movimento para a direita
+const int TECLA_BAIXO      = 4;   // Movimento para baixo
+const int TECLA_SELECIONAR = 5;   // Seleciona a peça/opção
+const int TECLA_SAIR       = 0;   // Encerra o jogo
+const int TECLA_INVALIDA   = -1;  // Indica uma entrada não reconhecida
 
 // Define o tabuleiro objetivo
 void definirObjetivo(Tabuleiro tab);
